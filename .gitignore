@@ -89,3 +89,4 @@ ENV/
 .ropeproject
 config.ini
 *.swp
+settings.cfg
