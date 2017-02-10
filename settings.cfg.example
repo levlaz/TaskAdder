@@ -1,5 +1,0 @@
-[auth]
-url:http://example.com/jsonrpc.php
-token:your token here
-project:1
-

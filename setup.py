@@ -1,7 +1,4 @@
 from setuptools import setup, find_packages
-from os import path
-
-here = path.abspath(path.dirname(__file__))
 
 setup(
     name='TaskAdder',
@@ -22,7 +19,7 @@ setup(
     packages=find_packages(),
     install_requires=['kanboard'],
     data_files=[
-        ('', ['icon.png'])
+        ('.', ['icon.png']),
     ],
     entry_points={
         'console_scripts': [

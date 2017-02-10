@@ -1,11 +1,14 @@
+import os
 import configparser
 from kanboard import Kanboard
 
 class Kan():
 
     def __init__(self):
+        configFile = os.path.expanduser('~') + '/.taskadder.cfg'
         config = configparser.ConfigParser()
-        config.read('settings.cfg')
+        config.read(configFile)
+
         self.url = config['auth']['url']
         self.token = config['auth']['token']
         self.project_id = config['auth']['project']
