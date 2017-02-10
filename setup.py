@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'taskadder=taskadder:main',
         ],
-    }
+    },
+    include_package_data=True
 )
 
