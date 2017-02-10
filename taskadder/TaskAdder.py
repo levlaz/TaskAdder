@@ -6,7 +6,9 @@ from taskadder.kan import Kan
 
 class TaskAdder(tkinter.Frame):
     def __init__(self, parent):
-        icon = tkinter.Image('photo', file='icon.png')
+        icon = tkinter.Image(
+            'photo',
+            file=os.path.join(os.path.dirname(__file__), 'icon.png'))
         tkinter.Frame.__init__(self,parent)
         self.parent = parent
         self.parent.wm_title("Task Adder")

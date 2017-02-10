@@ -18,14 +18,12 @@ setup(
     keywords='productivity, tasks, desktop',
     packages=find_packages(),
     install_requires=['kanboard'],
-    data_files=[
-        ('.', ['icon.png']),
-    ],
     entry_points={
         'console_scripts': [
             'taskadder=taskadder:main',
         ],
     },
-    include_package_data=True
+    include_package_data=True,
+    package_data={'taskadder': ['icon.png']}
 )
 
